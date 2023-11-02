@@ -1,0 +1,32 @@
+<body class="background-image">
+    <div class="header">
+      <h1><i>Cyber Threat awareness - Talk</i></h1>
+      <p>By Stephen King</p>
+      <p><b>On 07thJuly 2023, Friday through zoom</b></p>
+    </div>
+    <p id="one"><b><i>"Hackers are like lions, they go after the easiest prey – make sure you're not one of them !"</i></b></p>
+    <p id="two">There is a wealth of data and highly advanced technologies in the globe today.<br> The cyber threat escalates as technology advances and the amount of data increases.<br> We must be aware of typical risk factors and how to defend ourselves from them in order to protect ourselves from cyber concerns.<br>So join<b> Stephen</b> on <b>Friday </b>to learn about the threats from cyberspace.</p>
+    <p id="three"><b><marquee>! REGISTER TO GET THE ZOOM LINK BY PROVIDING THE BELOW ASKED DETAILS !</marquee></b></p>
+    <div class="center-container">
+    <div class="five">
+    <form [formGroup]="formData" class="four" (ngSubmit)="onSubmit()">
+      <label for="nameField"><b>Name: </b></label>
+      <input type="text" id="nameField" name="name" formControlName="name" required autocomplete="name" required><br>
+      <label for="emailField">Email: </label>
+      <input type="email" id="emailField" name="email" formControlName="email" required autocomplete="email" required><br><br>
+      <!--<label>Time:</label><-->
+      <span>Time: </span>
+      <label for="time1">10.30am<input type="radio" id="time1" name="time" value="10.30am" formControlName="time"></label>
+      <label for="time2">&nbsp;2.00pm<input type="radio" id="time2" name="time" value="2.00pm" formControlName="time"></label><br>
+      <!--<input type="radio" id="portion1" name="time" value="10.30am" [(ngModel)]="formData.time"><-->
+      <!--<label for="portion1">10.30am&nbsp;</label><-->
+      <!--<input type="radio" id="portion2" name="time" value="2.00am" [(ngModel)]="formData.time"><-->
+      <!--<label for="portion2">2.00pm</label><br><-->
+      <input type="submit" value="Submit" class="submit-button">
+    </form>
+    </div>
+  </div>
+</body>
+    
+    
+    
